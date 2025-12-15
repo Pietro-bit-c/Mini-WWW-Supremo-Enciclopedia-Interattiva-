@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Mini WWW Supremo – Enciclopedia Interattiva</title>
+<style>
+body{font-family: Arial, sans-serif; background: linear-gradient(to right,#a1c4fd,#c2e9fb); margin:0; text-align:center;}
+header{background:#ff6f61; color:white; padding:30px; font-size:30px; font-weight:bold;}
+.container{display:flex; flex-wrap:wrap; justify-content:center; margin:20px;}
+.box{background:linear-gradient(45deg,#ffd700,#ffec8b); width:200px; height:150px; margin:15px; border-radius:20px; box-shadow:5px 5px 15px rgba(0,0,0,0.3); display:flex; align-items:center; justify-content:center; font-weight:bold; cursor:pointer; transition:0.3s;}
+.box:hover{transform:scale(1.15);}
+section{display:none; background:white; margin:20px auto; padding:30px; max-width:1000px; border-radius:20px; box-shadow:5px 5px 15px rgba(0,0,0,0.3); text-align:left;}
+section.active{display:block;}
+.sub,.item{background:#ffeb99; padding:10px; border-radius:10px; margin:10px 0; cursor:pointer; font-weight:bold;}
+.sub:hover,.item:hover{background:#ffe066;}
+.detail{display:none; background:#fff3cc; padding:15px; border-radius:10px; margin:10px 0 20px 20px;}
+.detail img{width:200px; float:right; margin-left:15px; border-radius:10px;}
+.clearfix::after{content:"";display:block;clear:both;}
+footer{background:#ff6f61; color:white; padding:20px;}
+</style>
+</head>
+<body>
+<header>IL MIO MINI WWW 🌍🧠<br>Super Enciclopedia Interattiva</header>
+
+<div class="container">
+<div class="box" onclick="openSection('vg')">VideoGiochi</div>
+<div class="box" onclick="openSection('sport')">Sport</div>
+<div class="box" onclick="openSection('learn')">Apprendimento</div>
+<div class="box" onclick="openSection('altro')">Altro</div>
+</div>
+
+<!-- ================= VIDEO GIOCHI ================= -->
+<section id="vg">
+<h2>🎮 VideoGiochi</h2>
+
+<div class="sub" onclick="toggle('minecraft')">Minecraft</div>
+<div id="minecraft" class="detail clearfix">
+<img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png">
+<p>
+Minecraft (2009, Markus “Notch” Persson) è un gioco sandbox che permette di costruire mondi infiniti usando blocchi, esplorare ambienti generati proceduralmente, affrontare creature ostili e creare strutture complesse. Le modalità Sopravvivenza, Creativa e Avventura offrono esperienze diverse, stimolando creatività e problem-solving. La community globale ha creato mod, mappe, server tematici e mini-giochi. Minecraft viene usato anche nell’educazione per insegnare logica, programmazione e cooperazione. Eventi stagionali, aggiornamenti continui e collaborazioni culturali mantengono il gioco vivo. Ha venduto oltre 300 milioni di copie e ha influenzato film, merchandising e corsi scolastici. La grafica pixelata è diventata iconica, mentre il gameplay aperto genera esperienze uniche. Minecraft stimola collaborazione, immaginazione e capacità progettuali. I giocatori possono creare laboratori scientifici, città, avventure narrative e circuiti redstone. La longevità è garantita dalla libertà totale, dalla creatività e da una community attiva. Minecraft è diventato fenomeno globale della cultura digitale.
+</p>
+</div>
+
+<div class="sub" onclick="toggle('amongus')">Among Us</div>
+<div id="amongus" class="detail clearfix">
+<img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg">
+<p>
+Among Us (2018, InnerSloth) è un party game multiplayer in cui 4-15 giocatori collaborano per completare compiti in una navicella spaziale, mentre impostori cercano di sabotare e eliminare gli altri. Il gioco sviluppa strategia, comunicazione e logica sociale. Discussioni, accuse e votazioni rendono ogni partita unica. La grafica semplice e i colori vivaci lo rendono immediatamente accessibile. La community globale ha creato meme, fan art, video e tornei online. Tra gli aggiornamenti ci sono nuove mappe, modalità e personalizzazioni. L’ambientazione spaziale e la tensione costante stimolano deduzione e bluff. Il gioco ha avuto impatto culturale globale, influenzando altri giochi e contenuti mediatici. Tra streamer e youtuber è diventato un fenomeno virale, introducendo milioni di nuovi giocatori. Among Us promuove teamwork, pensiero critico e socialità digitale. Il gioco continua a ricevere supporto e innovazioni dalla community. È esempio di come semplicità e socialità possano creare un successo mondiale.
+</p>
+</div>
+
+<!-- Altri giochi famosi possono essere aggiunti nello stesso formato: Fortnite, Roblox, Zelda, Pokémon, GTA, Mario, ecc., 13-15 righe ciascuno -->
+
+</section>
+
+<!-- ================= SPORT ================= -->
+<section id="sport">
+<h2>⚽ Sport</h2>
+
+<div class="sub" onclick="toggle('calcio')">Calcio</div>
+<div id="calcio" class="detail clearfix">
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Soccerball.svg">
+<p>
+Il calcio, codificato in Inghilterra nel 1863, è uno sport globale praticato da due squadre di 11 giocatori. L’obiettivo è segnare nella porta avversaria seguendo regole come fuorigioco, rigori e falli. Leggende come Pelé, Maradona, Messi e Ronaldo hanno plasmato la storia del calcio. Competizioni internazionali come FIFA World Cup e UEFA Champions League attraggono milioni di spettatori. Il calcio influenza moda, musica e cultura pop, generando tifoserie e merchandising. Le strategie tattiche, l’allenamento professionale e le innovazioni tecnologiche rendono il gioco spettacolare. Eventi globali uniscono persone di tutte le età e culture. Tecniche come pressing, contropiede e schemi offensivi mostrano complessità del gioco. L’impatto culturale è enorme con film, libri e documentari. Il calcio promuove lavoro di squadra, disciplina e fair play. È anche strumento educativo e sociale. La popolarità mondiale ha creato comunità online e tornei amatoriali. Il calcio è simbolo universale di sport e intrattenimento.
+</p>
+</div>
+
+<div class="sub" onclick="toggle('basket')">Basket</div>
+<div id="basket" class="detail clearfix">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png">
+<p>
+Il basket, inventato nel 1891 da James Naismith, si gioca con due squadre di cinque giocatori che cercano di segnare nel canestro avversario. La partita combina abilità fisica, strategia e coordinazione. NBA e competizioni internazionali hanno reso il basket popolare in tutto il mondo. Leggende come Michael Jordan, LeBron James e Kobe Bryant hanno definito il gioco. Tecniche come dribbling, passaggi, rimbalzi e tiri liberi sono fondamentali. La tattica comprende difesa a zona, uomo su uomo e contropiede. Il basket ha influenzato cultura pop, moda, musica e videogiochi. Eventi come All-Star Game attraggono milioni di fan. La pratica promuove agilità, velocità, lavoro di squadra e disciplina. La community globale organizza campionati e scuole di basket. Lo sport è accessibile a tutte le età, promuovendo socializzazione e inclusione. Il basket è simbolo di eccellenza atletica e intrattenimento globale. Ha sviluppato rivalità storiche e comunità di tifosi appassionati.
+</p>
+</div>
+
+<div class="sub" onclick="toggle('pallavolo')">Pallavolo</div>
+<div id="pallavolo" class="detail clearfix">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Volleyball.jpg">
+<p>
+La pallavolo, inventata nel 1895 da William G. Morgan, si gioca con due squadre di sei giocatori. L’obiettivo è far cadere la palla nel campo avversario, passando sopra la rete. Richiede coordinazione, agilità e strategia. Ci sono competizioni nazionali e internazionali, tra cui Olimpiadi e Mondiali. Tecniche fondamentali includono palleggio, schiacciata, ricezione e muro. Squadre leggendarie hanno creato storie epiche. La pallavolo ha impatto educativo, sviluppando lavoro di squadra e fair play. Eventi e tornei locali promuovono socializzazione tra giovani e adulti. La diffusione mondiale include club, scuole e campionati amatoriali. L’evoluzione delle regole ha reso il gioco dinamico e spettacolare. La pallavolo unisce persone di ogni età e cultura. Lo sport promuove disciplina, divertimento e spirito competitivo. È praticato sia indoor che beach volley. La sua popolarità è globale, con milioni di praticanti.
+</p>
+</div>
+
+<div class="sub" onclick="toggle('pallaavvelenata')">Palla Avvelenata</div>
+<div id="pallaavvelenata" class="detail clearfix">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Dodgeball.jpg">
+<p>
+La Palla Avvelenata è un gioco di squadra in cui i giocatori devono evitare di essere colpiti da una palla lanciata dagli avversari. Nato come gioco scolastico, promuove agilità, riflessi e strategia. Le regole includono eliminazioni, tempi di gioco e zone sicure. È praticato in cortili e palestre e ha portato a tornei ufficiali in alcuni paesi. La dinamica richiede lavoro di squadra, coordinazione e attenzione costante. Alcuni club hanno creato leghe amatoriali e campionati regionali. La storia risale al XX secolo, adattandosi a scuole e comunità. La Palla Avvelenata incoraggia socializzazione e spirito sportivo. È un classico dei giochi di gruppo che unisce persone di tutte le età. La strategia include movimenti rapidi, finta e collaborazione. Il gioco è divertente, competitivo e accessibile. Ha influenzato giochi moderni di squadra e tornei ricreativi. La popolarità è globale, soprattutto tra giovani e ragazzi.
+</p>
+</div>
+
+<!-- Aggiungi altre discipline sportive: Motoria, Nuoto, Atletica, Tennis, Ginnastica, ecc., ognuna 13-15 righe -->
+
+</section>
+
+<!-- ================= APPRENDIMENTO ================= -->
+<section id="learn">
+<h2>📚 Apprendimento</h2>
+
+<div class="sub" onclick="toggle('matematica')">Matematica</div>
+<div id="matematica" class="detail">
+<p>
+La matematica studia numeri, forme e relazioni logiche. Comprende Algebra, Geometria, Calcolo, Statistica e Probabilità. Applicazioni: crittografia, intelligenza artificiale, economia, simulazioni scientifiche. Matematici storici: Euclide, Newton, Gauss, Ramanujan. Stimola pensiero critico, problem-solving e modellazione del mondo reale. Essenziale per innovazione, ricerca e sviluppo tecnologico. Promuove precisione, logica e creatività. Algoritmi e numeri primi sono fondamentali in informatica e ingegneria. La matematica è onnipresente nella società moderna. Applicazioni quotidiane: economia, architettura, medicina e tecnologia. Imparare matematica sviluppa capacità analitiche e strategiche. Continua a evolversi con nuove teorie e scoperte. È pilastro della civiltà, della scienza e della tecnologia. La matematica è linguaggio universale.
+</p>
+</div>
+
+<div class="sub" onclick="toggle('scienze')">Scienze</div>
+<div id="scienze" class="detail">
+<p>
+Le scienze studiano il mondo naturale attraverso osservazione, esperimenti e teoria. Comprendono Biologia, Chimica, Fisica, Astronomia e Geologia. Scienziati: Galileo, Darwin, Curie, Einstein. Promuovono metodo scientifico, pensiero critico e innovazione tecnologica. Applicazioni: medicina, energia, informatica, ambiente, ricerca spaziale. Intersecano ingegneria, matematica e tecnologia. Esperimenti e laboratori sviluppano curiosità e analisi. Scoperte scientifiche hanno impatti culturali, economici e sociali. Progressi moderni: intelligenza artificiale, genetica, esplorazione spaziale, energie rinnovabili. Studiare scienze sviluppa logica, curiosità e competenze globali. Contribuiscono alla comprensione profonda dell’universo e della vita. Le scienze arricchiscono conoscenza e innovazione. Sono fondamentali per progresso, educazione e sviluppo sostenibile.
+</p>
+</div>
+
+<div class="sub" onclick="toggle('storia')">Storia</div>
+<div id="storia" class="detail">
+<p>
+La storia studia il passato dell’umanità, eventi, civiltà, culture, guerre e trasformazioni sociali. Comprende Preistoria, Antichità, Medioevo, Età Moderna e Contemporanea. Storici: Tucidide, Herodoto, Voltaire, Gibbon. Permette di comprendere cause ed effetti, evoluzione politica, sociale e culturale. Eventi come rivoluzioni, guerre mondiali e migrazioni hanno plasmato il mondo. Monumenti, opere d’arte, documenti e tradizioni testimoniano epoche passate. Studiare storia sviluppa pensiero critico e capacità di analisi. Conoscenza storica guida decisioni etiche, politiche e culturali. Musei, ricerche archeologiche e libri diffondono sapere storico. La storia integra geografia, economia, scienze e arte. Promuove comprensione sociale e culturale. È essenziale per educazione e cittadinanza attiva. Analizzare il passato aiuta a costruire futuro. La storia è memoria collettiva e identità culturale.
+</p>
+</div>
+
+<!-- Aggiungi altre materie: Motoria, Lingue, Tecnologia, Rompicapi, ecc., ognuna 13-15 righe -->
+
+</section>
+
+<!-- ================= ALTRO ================= -->
+<section id="altro">
+<h2>🌟 Altro</h2>
+
+<div class="sub" onclick="toggle('arte')">Arte</div>
+<div id="arte" class="detail clearfix">
+<div class="item" onclick="toggle('picasso')">Pablo Picasso</div>
+<div id="picasso" class="detail clearfix">
+<img src="https://upload.wikimedia.org/wikipedia/en/9/99/Pablo_picasso_1.jpg">
+<p>
+Pablo Picasso (1881–1973) è uno dei più grandi artisti del XX secolo, fondatore del Cubismo. Opere come Guernica e Les Demoiselles d’Avignon hanno rivoluzionato pittura e scultura. Ha sperimentato stili diversi, influenzando arte moderna e contemporanea. Collaborazioni, viaggi e partecipazioni a movimenti culturali hanno arricchito la sua visione. La vita è piena di curiosità, relazioni e sperimentazioni. Ha ispirato musei, gallerie, libri e film. Innovazione e rottura degli schemi lo rendono immortale. L’arte, l’istruzione e la tecnica sono centrali nella sua opera. Le opere continuano a ispirare nuove generazioni. La storia di Picasso è insegnata nelle scuole di arte e cultura. Ha contribuito alla diffusione e valorizzazione dell’arte moderna. Il suo impatto è globale e duraturo. La sua vita rappresenta creatività e audacia artistica.
+</p>
+</div>
+</div>
+
+<!-- Aggiungi qui altre voci: Viaggi, Cultura, Musica, Film, Tecnologia, Rompicapi, ecc., 13-15 righe ciascuno -->
+
+</section>
+
+<footer>Creato da me 💻 | Mini WWW personale definitivo</footer>
+
+<script>
+function openSection(id){
+document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+document.querySelectorAll('.detail').forEach(d=>d.style.display='none');
+}
+function toggle(id){
+let e=document.getElementById(id);
+e.style.display=(e.style.display==='block')?'none':'block';
+}
+</script>
+
+</body>
+</html>
